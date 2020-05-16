@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - CSS Transition</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .box {
+            height: 100px;
+            width: 100px;
+            background: red;
+            /* Excercise: Change Code to use cubic-bezier  */
+            transition: transform 1s cubic-bezier(0.83, 0, 0.17, 1);
+        }
+
+        .box.active {
+            transform: translateX(800px);
+        }
+
+        #animate {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="box"></div>
+    <button id='animate'>Animate me!!</button>
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script>
+        $("#animate").click(function () {
+            $(".box").toggleClass("active");
+        });
+    </script>
+
+</body>
+
+</html>

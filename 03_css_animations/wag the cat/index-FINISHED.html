@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - DIY Catwalk(cycle)</title>
+  <link rel="stylesheet" href="./style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <style>
+    .tail {
+      animation-name: tailWag;
+      animation-timing-function: steps(5);
+      animation-duration: .5s;
+      /* Try using the non-default values here */
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+
+    /* Nothing else needed! */
+    .window {
+      background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/tuna-window.png") no-repeat 0 0;
+      background-size: 100% auto;
+      padding-top: 81.38%;
+    }
+
+    .tail {
+      background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/tuna-tails.png) 0 0 no-repeat;
+      background-size: 100% auto;
+      width: 40%;
+      padding-top: 18.63%;
+      position: absolute;
+      top: 75%;
+      left: 16%;
+    }
+
+    /* The magical formula for making steps() perfectly work is
+
+    percentage($height / ($height - ($height / $steps)))
+
+    So
+    1375 / (1375 - (1375 / 5)) * 100%;
+    1375 / (1375 - 275) * 100%;
+    1375 / 1100 * 100%;
+    1.25 * 100%
+    125%
+
+    Nootch.
+
+    */
+    @keyframes tailWag {
+      0% {
+        background-position: 0 0;
+      }
+
+      100% {
+        background-position: 0 125%;
+      }
+    }
+
+    body {
+      background: #c0c0c0;
+    }
+
+    .stage {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60%
+    }
+  </style>
+</head>
+<body>
+<div class="stage">
+  <div class="window">
+    <div class="tail"></div>
+  </div>
+</div>
+</body>
+</html>

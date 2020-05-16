@@ -2,9 +2,8 @@
 
 ## Goals
 
-- Familiarize yourself with the keyframes and animations
+- Familiarize yourself with the CSS animations and fill value of `animation-iteration-count` and `animation-direction` so that tail of cat wag back and forth just like pendulum.
 
 ## Directions
 
-1. Google `translateX` property
-2. user `translateX` and `transform`
+1. Google `animation-iteration-count` and `animation-direction`
