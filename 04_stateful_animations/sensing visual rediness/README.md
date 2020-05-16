@@ -6,4 +6,4 @@
 
 ## Directions
 
-1. Show and hide emenets with classes like `.loading`
+1. Show and hide elements with classes like `.loading`

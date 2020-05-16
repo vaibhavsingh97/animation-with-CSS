@@ -2,7 +2,7 @@
 
 ## Goals
 
-- Familiarize yourself with the CSS animations
+- Familiarize yourself with the CSS animations and fill value of `animation-iteration-count` and `animation-direction` so that tail of cat wag back and forth just like pendulum.
 
 ## Directions
 

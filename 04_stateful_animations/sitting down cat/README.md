@@ -6,4 +6,4 @@
 
 ## Directions
 
-1. Using `animation-delay` and start a sitting animatoin after walking animation.
+1. Using `animation-delay` and start a sitting animation after walking animation.

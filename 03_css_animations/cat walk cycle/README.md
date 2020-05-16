@@ -2,7 +2,7 @@
 
 ## Goals
 
-- Familiarize yourself with the keyframes and animations
+- Familiarize yourself with the keyframes and animations and add `animation` property on `.tuna` class, alos learn about `steps` and use it in timing function.
 
 ## Directions
 

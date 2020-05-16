@@ -2,7 +2,7 @@
 
 ## Goals
 
-- Familiarize yourself with the transition basics
+- Familiarize yourself with the transition basics and move square box in vertical direction.
 
 ## Directions
 

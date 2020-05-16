@@ -2,7 +2,7 @@
 
 ## Goals
 
-- Familiarize yourself with the `cubic-bezier`
+- Familiarize yourself with the `cubic-bezier`, and change `ease-in` value to `cubic-bezeir`
 
 ## Directions
 
