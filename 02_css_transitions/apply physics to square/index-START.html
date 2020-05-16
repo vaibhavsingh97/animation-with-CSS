@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - CSS Transition</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .box {
+      height: 100px;
+      width: 100px;
+      background: red;
+      /* Excercise: Change Code to Move forward  */
+      transition: border-radius 1s ease-in;
+    }
+
+    .box.active {
+      /* Excercise: Add Code to Move forward  */
+    }
+
+    #animate {
+      margin-top: 20px;
+    }
+
+  </style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="box"></div>
+<button id='animate'>Animate me!!</button>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+  <script>
+    $("#animate").click(function () {
+      $(".box").toggleClass("active");
+    });
+  </script>
+
+</body>
+</html>
