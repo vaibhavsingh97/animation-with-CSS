@@ -110,7 +110,7 @@
             position: absolute;
             top: 50%; left: 50%;
             transform: translate(-50%, -50%);
-            width: 60%;
+            width: 60%
         }
     </style>
 </head>
@@ -136,6 +136,7 @@
         $(window).load(function(){
         setTimeout(function(){
             // use .addClass() and .removeClass() to swap the loading class for loaded on #stage.
+                $('#stage').removeClass('loading').addClass('loaded');
             }, 6000);
         });
     </script>
