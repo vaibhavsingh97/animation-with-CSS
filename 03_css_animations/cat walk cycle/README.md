@@ -6,5 +6,4 @@
 
 ## Directions
 
-1. Google `translateX` property
-2. user `translateX` and `transform`
+1. Use `keyframes` and `animations` property.

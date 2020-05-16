@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - DIY Catwalk(cycle)</title>
+  <link rel="stylesheet" href="./style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <style>
+    .tuna {
+    /* use the timing function steps() to chunk the animation into 12 equal pieces */
+    background: url(http://stash.rachelnabors.com/animation-workshop/sprite_catwalk.png) 0 0 no-repeat;
+    height: 200px;
+    width: 400px;
+    margin: 100px auto 0;
+    animation: catWalk 1s steps(12) infinite;
+    }
+
+    /* Don't forget: You'll need an @keyframes block to change the background image's position! */
+    @keyframes catWalk {
+      0%{
+        background-position: 0 0;
+      }
+      100% {
+        background-position: 0 -2400px;
+      }
+    }
+
+    p {text-align: center;}
+  </style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="tuna"></div>
+
+<p>You can do it!</p>
+<!-- partial -->
+
+</body>
+</html>

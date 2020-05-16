@@ -2,9 +2,8 @@
 
 ## Goals
 
-- Familiarize yourself with the keyframes and animations
+- Familiarize yourself with the CSS animations
 
 ## Directions
 
-1. Google `translateX` property
-2. user `translateX` and `transform`
+1. Google `animation-iteration-count` and `animation-direction`
